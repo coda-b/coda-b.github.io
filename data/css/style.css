@@ -88,10 +88,6 @@ body {
 	opacity: 0.3;
 }
 
-/* .nav li a, .nav li, .menu {
-	height: 3vh;
-} */
-
 .nav:hover {
 	background-color: rgba(0,0,0,.6);
 }
@@ -140,12 +136,6 @@ body {
 	z-index: 5000;
 	transition: all .7s ease;
 }
-
-/* .button-active{
-  	background-color: rgba(255,255,255,.5);
-	float: left;
-	z-index: 5000;
-} */
 
 .b3 {
 	display: none;
