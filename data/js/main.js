@@ -39,7 +39,6 @@ var bg = document.getElementById("bg_im");
 var bg_n = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 
 bg.style.backgroundImage = "url(data/img/bg/bg" + bg_n + ".jpg"
-
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
