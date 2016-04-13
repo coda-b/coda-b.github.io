@@ -1,0 +1,178 @@
+body {
+	background-color: black;
+}
+
+.bg_im {
+	position: fixed;
+	display: block;
+	background: url() no-repeat center center fixed;
+	background-size: 110vw 110vh;
+	width: 110vw;
+	height: 110vh;
+	-webkit-filter: blur(.2vw);
+    -moz-filter: blur(.2vw);
+    -o-filter: blur(.2vw);
+    -ms-filter: blur(.2vw);
+    filter: blur(.2vw);
+}
+
+/*
+.video {
+    position: absolute;
+     width: 100%;
+     min-height: 100%;
+     left: 0px;
+     top: 50%;
+     transform: translate(0%, -50%);
+}
+
+.video::before {
+    content: "";
+    height: 0px;
+    display: block;
+    padding-bottom: 56.25%;
+}
+
+.video video {
+    width: auto;
+    height: 101%;
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+*/
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100%;
+	height: 28px;
+    float: left;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0,0,0,.2);
+	transition: all .7s ease;
+}
+
+.menu {
+	width: 100%;
+	height: 28px;
+	position: fixed;
+	bottom: 0 !important;
+	z-index: 5000;
+}
+
+.nav li {
+	float: left;
+	height: 28px;
+	border-right: 1px solid rgba(250,250,250,.2);
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.nav li a {
+	height: 28px;
+	display: block;
+	padding: 7px 5vw;
+	text-decoration: none;
+	font-family: 'Electrolize', sans-serif;
+	font-weight: 100;
+	color: rgba(250,250,250,.8);
+	transition: all .7s ease;
+	opacity: 0.3;
+}
+
+/* .nav li a, .nav li, .menu {
+	height: 3vh;
+} */
+
+.nav:hover {
+	background-color: rgba(0,0,0,.6);
+}
+
+.nav li a:hover{
+	background-color: rgba(0,0,0,.7);
+	opacity: 1;
+
+}
+
+.button:hover{
+	background-color: rgba(0,0,0,.7);
+	/*and so on*/
+}
+
+.icon {
+	margin: 10px 7px;
+    width: 20px;
+    height: 20px;
+    padding-left: 6px;
+	transition: all .7s ease;
+}
+
+.button:hover .icon .bar, .button:hover .icon{
+	width: 25px;
+	height: 2px;
+}
+
+.bar {
+	float: right;
+    width: 20px;
+    height: 1px;
+    background: rgba(250,250,250,.4);
+    margin-bottom: 6px;
+	transition: all .7s ease;
+}
+
+.button {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 1px solid rgba(250,250,250,.2);
+	z-index: 5000;
+	transition: all .7s ease;
+}
+
+/* .button-active{
+  	background-color: rgba(255,255,255,.5);
+	float: left;
+	z-index: 5000;
+} */
+
+.b3 {
+	display: none;
+}
+
+.preload {
+	position: absolute;
+	width: 500vh;
+	height: 500vw;
+	z-index: 10000;
+	background-color: black;
+	display: block;
+	overflow: hidden;
+	transition: all 2s ease;
+}
+
+@media (max-width: 370px) {
+	.icon{
+		margin: 13px 0 0 16px;
+		padding: 0;
+	}
+
+	.nav li a, .nav li {
+		padding: 5px 1vw 0 1vw;
+	}
+
+	.nav li a {
+		font-size: 16px;
+	}
+}
