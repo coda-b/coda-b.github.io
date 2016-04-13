@@ -4,9 +4,8 @@ body {
 
 .bg_im {
 	position: fixed;
-	display: block;
 	background: url() no-repeat center center fixed;
-	background-size: 110vw 110vh;
+	background-size: cover;
 	width: 110vw;
 	height: 110vh;
 	-webkit-filter: blur(.2vw);
@@ -88,6 +87,10 @@ body {
 	opacity: 0.3;
 }
 
+/* .nav li a, .nav li, .menu {
+	height: 3vh;
+} */
+
 .nav:hover {
 	background-color: rgba(0,0,0,.6);
 }
@@ -137,6 +140,12 @@ body {
 	transition: all .7s ease;
 }
 
+/* .button-active{
+  	background-color: rgba(255,255,255,.5);
+	float: left;
+	z-index: 5000;
+} */
+
 .b3 {
 	display: none;
 }
@@ -152,6 +161,16 @@ body {
 	transition: all 2s ease;
 }
 
+@media (max-width: 570px) {
+	.bg_im {
+		-webkit-filter: blur(.3vw);
+		-moz-filter: blur(.3vw);
+		-o-filter: blur(.3vw);
+		-ms-filter: blur(.3vw);
+		filter: blur(.3vw);
+	}
+}
+
 @media (max-width: 370px) {
 	.icon{
 		margin: 13px 0 0 16px;
@@ -164,5 +183,13 @@ body {
 
 	.nav li a {
 		font-size: 16px;
+	}
+
+	.bg_im {
+		-webkit-filter: blur(.4vw);
+		-moz-filter: blur(.4vw);
+		-o-filter: blur(.4vw);
+		-ms-filter: blur(.4vw);
+		filter: blur(.4vw);
 	}
 }
