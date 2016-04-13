@@ -3,12 +3,12 @@ body {
 }
 
 .bg_im {
-	position: fixed;
-	background: url() no-repeat center center fixed;
-	background-size: cover;
-	width: 110vw;
-	height: 110vh;
-	-webkit-filter: blur(.2vw);
+    position: fixed;
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+    width: 110vw;
+    height: 110vh;
+    -webkit-filter: blur(.2vw);
     -moz-filter: blur(.2vw);
     -o-filter: blur(.2vw);
     -ms-filter: blur(.2vw);
@@ -51,20 +51,20 @@ body {
 
 .nav{
     width: 100%;
-	height: 28px;
+    height: 28px;
     float: left;
     padding: 0;
     list-style: none;
     background-color: rgba(0,0,0,.2);
-	transition: all .7s ease;
+    transition: all .7s ease;
 }
 
 .menu {
-	width: 100%;
-	height: 28px;
-	position: fixed;
-	bottom: 0 !important;
-	z-index: 5000;
+    width: 100%;
+    height: 28px;
+    position: fixed;
+    bottom: 0 !important;
+    z-index: 5000;
 }
 
 .nav li {
