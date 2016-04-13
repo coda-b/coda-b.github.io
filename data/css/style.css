@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+    background-color: black;
 }
 
 .bg_im {
@@ -151,7 +151,7 @@ body {
 	background-color: black;
 	display: block;
 	overflow: hidden;
-	transition: all 2s ease;
+	transition: all 10s ease;
 }
 
 @media (max-width: 570px) {
