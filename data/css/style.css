@@ -1,15 +1,14 @@
 body {
-	background-color: black;
+    background-color: black;
 }
 
 .bg_im {
-	position: fixed;
-	display: block;
-	background: url() no-repeat center center fixed;
-	background-size: 110vw 110vh;
-	width: 110vw;
-	height: 110vh;
-	-webkit-filter: blur(.2vw);
+    position: fixed;
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+    width: 110vw;
+    height: 110vh;
+    -webkit-filter: blur(.2vw);
     -moz-filter: blur(.2vw);
     -o-filter: blur(.2vw);
     -ms-filter: blur(.2vw);
@@ -25,14 +24,12 @@ body {
      top: 50%;
      transform: translate(0%, -50%);
 }
-
 .video::before {
     content: "";
     height: 0px;
     display: block;
     padding-bottom: 56.25%;
 }
-
 .video video {
     width: auto;
     height: 101%;
@@ -52,20 +49,20 @@ body {
 
 .nav{
     width: 100%;
-	height: 28px;
+    height: 28px;
     float: left;
     padding: 0;
     list-style: none;
     background-color: rgba(0,0,0,.2);
-	transition: all .7s ease;
+    transition: all .7s ease;
 }
 
 .menu {
-	width: 100%;
-	height: 28px;
-	position: fixed;
-	bottom: 0 !important;
-	z-index: 5000;
+    width: 100%;
+    height: 28px;
+    position: fixed;
+    bottom: 0 !important;
+    z-index: 5000;
 }
 
 .nav li {
@@ -87,10 +84,6 @@ body {
 	transition: all .7s ease;
 	opacity: 0.3;
 }
-
-/* .nav li a, .nav li, .menu {
-	height: 3vh;
-} */
 
 .nav:hover {
 	background-color: rgba(0,0,0,.6);
@@ -141,12 +134,9 @@ body {
 	transition: all .7s ease;
 }
 
-/* .button-active{
-  	background-color: rgba(255,255,255,.5);
-	float: left;
-	z-index: 5000;
-} */
-
+::selection {
+	background: rgba(0,0,0,.7);
+}
 .b3 {
 	display: none;
 }
@@ -159,7 +149,17 @@ body {
 	background-color: black;
 	display: block;
 	overflow: hidden;
-	transition: all 2s ease;
+	transition: all 10s ease;
+}
+
+@media (max-width: 570px) {
+	.bg_im {
+		-webkit-filter: blur(.3vw);
+		-moz-filter: blur(.3vw);
+		-o-filter: blur(.3vw);
+		-ms-filter: blur(.3vw);
+		filter: blur(.3vw);
+	}
 }
 
 @media (max-width: 370px) {
@@ -174,5 +174,13 @@ body {
 
 	.nav li a {
 		font-size: 16px;
+	}
+
+	.bg_im {
+		-webkit-filter: blur(.4vw);
+		-moz-filter: blur(.4vw);
+		-o-filter: blur(.4vw);
+		-ms-filter: blur(.4vw);
+		filter: blur(.4vw);
 	}
 }
