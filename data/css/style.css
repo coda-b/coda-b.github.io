@@ -2,7 +2,21 @@ body {
 	background-color: black;
 }
 
+.bg_im {
+	position: fixed;
+	display: block;
+	background: url() no-repeat center center fixed;
+	background-size: 110vw 110vh;
+	width: 110vw;
+	height: 110vh;
+	-webkit-filter: blur(.2vw);
+    -moz-filter: blur(.2vw);
+    -o-filter: blur(.2vw);
+    -ms-filter: blur(.2vw);
+    filter: blur(.2vw);
+}
 
+/*
 .video {
     position: absolute;
      width: 100%;
@@ -27,7 +41,7 @@ body {
     left: 50%;
     transform: translate(-50%, 0%);
 }
-
+*/
 
 .container {
     position: relative;
@@ -143,24 +157,10 @@ body {
 	height: 500vw;
 	z-index: 10000;
 	background-color: black;
+	display: block;
 	overflow: hidden;
+	transition: all 2s ease;
 }
-
-/*
-.preload-end {
-	animation: anim .3s linear 2s infinite alternate;
-}
-
-@keyframes anim {
-	0%  {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-*/
 
 @media (max-width: 370px) {
 	.icon{
