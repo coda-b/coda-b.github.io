@@ -41,10 +41,6 @@ var bg_n = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 
 bg.style.backgroundImage = "url(data/img/bg/bg" + bg_n + ".jpg";
 
-function loaded() {
-    preload.style.display = "none";
-}
-
-bgst.onload = function() {
-    loaded();
-}
+function imgLoaded(){
+    preload.setAttribute("class", "loaded");
+};
