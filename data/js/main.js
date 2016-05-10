@@ -37,7 +37,7 @@ document.querySelector(".button").onclick = function() {
 var preload = document.getElementById("preload");
 var bg = document.getElementById("bg_im");
 var bgst = bg.style.backgroundImage;
-var bg_n = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+var bg_n = Math.floor(Math.random() * 8) + 1;
 
 bg.style.backgroundImage = "url(data/img/bg/bg" + bg_n + ".jpg";
 
