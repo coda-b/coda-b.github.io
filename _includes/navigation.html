@@ -1,0 +1,47 @@
+<nav class="header-nav reveal">
+  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <ul class="header-links">
+    {% if site.about_enabled == true %}
+      <li>
+        <a href="{{ 'about' | relative_url }}" title="About me">
+            <p>.md</p>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.github %}
+      <li>
+        <a href="https://github.com/{{ site.social.github }}" target="_blank" title="GitHub">
+            <p>.git</p>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.telegram %}
+      <li>
+        <a href="https://telegram.me/{{ site.social.telegram }}" target="_blank" title="Telegram">
+            <p>.tg</p>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.bitcoin %}
+      <li>
+        <a href="{{ site.social.bitcoin }}" target="_blank" title="Bitcoin">
+          <span class="icon icon-social-bitcoin"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.email %}
+      <li>
+        <a href="mailto:{{ site.social.email }}" title="Email">
+            <p>.eml</p>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.rss_enabled == true %}
+      <li>
+        <a href="{{ 'feed.xml' | relative_url }}" target="_blank" title="RSS">
+            <p>.rss</p>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
